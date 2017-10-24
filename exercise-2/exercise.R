@@ -1,39 +1,33 @@
-### Exercise 2 ###
+### Exercise 5 ###
+library(jsonlite)
+library(dplyr)
+library(httr)
 
-# Load the httr and jsonlite libraries for accessing data
+# Read in your api-key.R file (that you'll create). Store your api-key in a variable in that file.
+# Write a function that allows you to specify a movie, that does the following:
+GetReview <- function(movie) {
+  
+  # Construct a search query using YOUR api key
+  # The base URL is https://api.nytimes.com/svc/movies/v2/reviews/search.json
+  # Your parameters should include a "query" and an "api_key"
+  # Note: the HTTR library will take care of spaces in the arguments
+  # See the interactive console for more detail:https://developer.nytimes.com/movie_reviews_v2.json#/Console/GET/reviews/search.json
+  
+  
+  # Request data using your search query
+  
+  
+  # What type of variable does this return?
+  
+  # Flatten the data stored in the `$results` key of the data returned to you
+  
+  
+  # From the most recent review, store the headline, short summary, and link to full article each in their own variables
+  
 
+  # Return an list of the three pieces of information from above
+  
+}
 
-# Create a `base.uri` variable that holds the base uri. You wil then paste endpoints to this base.
+# Test that your function works with a movie of your choice
 
-
-
-## As you may have noticed, it often takes multiple queries to retrieve the desired information.
-## This is a perfect situation in which writing a function will allow you to better structure your
-## code, and give a name to a repeated task!
-
-
-# Define a function `TopTrackSearch` that takes in an artist name as an argument,
-# and returns the top 10 tracks (in the US) by that artist
-
-
-
-
-# What are the top 10 tracks by Beyonce?
-
-
-# Use the `flatten` function to flatten the data.frame -- note what differs!
-
-
-# Use the `save()` function to save the flattened data frame to a file `beyonce.Rdata`
-
-
-# Use your `dplyr` functions to get the number of the songs that appear on each album
-
-
-
-### Bonus ###
-# Write a function that allows you to specify a search type (artist, album, etc.), and a string,
-# that returns the album/artist/etc. page of interest
-
-
-# Search albums with the word "Sermon"
